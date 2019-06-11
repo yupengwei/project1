@@ -1,0 +1,24 @@
+sudo service mysql start                            开启数据库服务
+sudo -u root -p                                     以root用户的方式进入数据库
+sudo apt-get install mysql-server/client            在线安装mysql数据库
+sudo netstat -tap | grep mysql                      检查mysql数据库是否安装好
+sudo gedit /etc/mysql/my.cnf                        修改mysql的配置。
+show databases;                                     查看已经建好的数据库。
+use information_schema；                            使用这个数据库。
+show tables;                                        查看表 
+quit                                                退出
+
+
+
+
+CREATE DATABASE mysql_shiyan;                                             创建数据库
+CREATE TABLE 表的名字
+(
+列名a 数据类型(数据长度),
+列名b 数据类型(数据长度)，
+列名c 数据类型(数据长度)
+);
+SELECT * FROM employee;                                                   查看表里面的内容。
+INSERT INTO 表的名字(列名a,列名b,列名c) VALUES(值1,值2,值3);               往表里面插入数据。
+
+ 
